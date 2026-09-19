@@ -3,19 +3,19 @@
 
 ---
 
-## 📋 Overview
+##  Overview
 
 This assignment focuses on using Docker, Docker Compose, Redis, and Kubernetes.
 
 
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ```text
 AIops-assignment-2/
 ├── README.md
-├── Report/
-│   └── AI_Ops_Assignment_2_Report.pdf
+├── AI_Ops_Assignment_2_Report.pdf
+│  
 │
 ├── question1/
 │   ├── Dockerfile.multistage
@@ -71,12 +71,12 @@ AIops-assignment-2/
     └── requirements.txt
 ```
 
-## 📖 How to Read This Assignment
+##  How to Read This Assignment
 
 ### **Question 1: Single-Stage vs. Multi-Stage Docker**
 
-📄 **Files:** `Dockerfile` / `Dockerfile.multistage`  
-🖼️ **Evidence:** `screenshots/`
+**Files:** `Dockerfile` / `Dockerfile.multistage`  
+**Evidence:** `screenshots/`
 
 **Summary:** Built and tested both a naive single-stage Docker image and an optimized multi-stage image for the spam-detection API.
 
@@ -100,8 +100,8 @@ Both images were tested successfully using:
 
 ### **Question 2: Multi-Container Orchestration with Docker Compose**
 
-📄 **Files:** `docker-compose.yml`, `app.py`  
-🖼️ **Evidence:** `screenshots/`
+ **Files:** `docker-compose.yml`, `app.py`  
+ **Evidence:** `screenshots/`
 
 **Summary:** Extended the spam-detection API with a Redis caching layer and orchestrated the application using Docker Compose.
 
@@ -127,8 +127,8 @@ The recorded cache hit was approximately **39.6× faster** than the cache miss.
 
 ### **Question 3: Kubernetes Indexed Job**
 
-📄 **Files:** `job-validator.yaml`, `validate_worker.py`, `collect_results.py`, `generate_shards.py`  
-🖼️ **Evidence:** `screenshots/`
+ **Files:** `job-validator.yaml`, `validate_worker.py`, `collect_results.py`, `generate_shards.py`  
+ **Evidence:** `screenshots/`
 
 **Summary:** Implemented a Kubernetes Indexed Job to validate 8 partitioned CSV shards.
 
@@ -171,8 +171,8 @@ Results were collected through the Kubernetes API by reading pod logs rather tha
 
 ### **Question 4: Kubernetes Deployment — Self-Healing & Rolling Updates**
 
-📄 **File:** `deployment.yaml`  
-🖼️ **Evidence:** `screenshots/`
+ **File:** `deployment.yaml`  
+ **Evidence:** `screenshots/`
 
 **Summary:** Deployed the spam-detection API using a Kubernetes Deployment with 2 replicas and a ClusterIP Service.
 
@@ -220,7 +220,7 @@ The v2 application exposes its version through `/healthz`:
 
 ---
 
-## 🖼️ Evidence
+##  Evidence
 
 The repository contains execution evidence for:
 
@@ -240,7 +240,7 @@ The repository contains execution evidence for:
 
 A separate assignment video contains the working demonstration and execution walkthrough.
 
-## 🚀 Quick Start ;; LOOK AT THE VIDEO FOR BETTER UNDERSTANDING AND IF ANY MISTAKES BELOW FOLLOW WHATEVER IS DONE IN VIDEO
+##  Quick Start ;; LOOK AT THE VIDEO FOR BETTER UNDERSTANDING AND IF ANY MISTAKES BELOW FOLLOW WHATEVER IS DONE IN VIDEO
 
 Each question is self-contained in its own directory. Run the commands from the repository root unless otherwise specified.
 
@@ -535,12 +535,18 @@ question4/  → Self-healing and rolling-update evidence
 
 The complete working demonstration is also included in the submitted assignment video.
 
-## 🤖 AI Disclosure
+##  AI Disclosure
+**How they were used:**  
+I used AI mainly to understand the existing concepts better that were taught in class and also to learn newer ones which were required for this assignment better and faster.I also used them for writing codes and also cross verifying it with both AI and also by me, I even used to solve some terminal errors that I was getting while running the commands .Also took help for formatting the report (also some part of readme in here but this particular section is not written by AI but written by me ) in latex but before that I had to give my written answers for everything with the screenshots as evidence of what I did and also my code for better understanding , still many technical decisions had to be made by me .And everything done by AI was verified by me in this assignment.
 
+**Tools used:** ChatGPT and Gemini
+
+**Impact:**  
+The tools helped speed up learning, debugging, and documentation. All reported results and measurements are from my actual executions, and I reviewed and verified the final code and configurations before submission.
 
 ---
 
-## 📚 Where to Find Everything
+##  Where to Find Everything
 
 | What | Where |
 |------|-------|
