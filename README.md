@@ -80,12 +80,12 @@ AIops-assignment-2/
 
 **Summary:** Built and tested both a naive single-stage Docker image and an optimized multi-stage image for the spam-detection API.
 
-| Image | Size |
+| Image | Size(disk space) |(for the other space comparison look at the screenshot evidence in repo
 |------|------:|
 | Naive | 2.28 GB |
-| Multi-stage | 153 MB |
+| Multi-stage | 715 MB |
 
-Approximate image-size reduction: **93.4%**
+Approximate image-size reduction: **68-69%**
 
 The multi-stage build uses `python:3.14-slim` as the runtime image and keeps the builder environment out of the final image.
 
